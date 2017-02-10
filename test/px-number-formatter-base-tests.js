@@ -190,7 +190,7 @@ function runBaseTests() {
       assert.isTrue(Polymer !== null);
     });
     test('px-number-formatter fixture is created', function() {
-      assert.isTrue(document.getElementById('px_number_formatter_1') !== null);
+      assert.isTrue(document.getElementById('formatter') !== null);
     });
 
   });

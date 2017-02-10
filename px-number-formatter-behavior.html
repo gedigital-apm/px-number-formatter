@@ -1,7 +1,7 @@
 <link rel="import" href="numbro-import.html">
 
 <script>
-
+  var PxNumberFormatter = PxNumberFormatter || {};
   /*
       Name:
       PxNumberFormatter
@@ -132,6 +132,8 @@
         } else {
           formatted = numbro(value).format(this.format);
         }
+
+        formatted = formatted === 'NaN' ? '' : formatted;
 
         this.set('formattedValue', formatted);
       },
