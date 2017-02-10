@@ -1,52 +1,73 @@
-[![Bower version](https://badge.fury.io/bo/numbro-element.svg)](https://badge.fury.io/bo/numbro-element)
-[![Build Status](https://travis-ci.org/MeTaNoV/numbro-element.svg?branch=master)](https://travis-ci.org/MeTaNoV/numbro-element)
-[![Dependency Status](https://gemnasium.com/MeTaNoV/numbro-element.svg)](https://gemnasium.com/MeTaNoV/numbro-element)
+#px-number-formatter
 
-`<numbro-element>` is a CSS friendly element wrapper for the [numbro.js](http://numbrojs.com/) library.
+## Overview
 
-## Demo
-
-[https://metanov.github.io/numbro-element/](https://metanov.github.io/numbro-element/components/numbro-element/demo/)
-
-## Install
-
-Install the component using [Bower](http://bower.io/):
-
-```sh
-$ bower install numbro-element --save
-```
+px-number-formatter is a Predix UI component
 
 ## Usage
 
-Import Custom Element:
+### Prerequisites
+1. node.js
+2. npm
+3. bower
+4. [webcomponents-lite.js polyfill](https://github.com/webcomponents/webcomponentsjs)
 
-```html
-<link rel="import" href="bower_components/numbro-element/numbro-element.html">
+Node, npm and bower are necessary to install the component and dependencies. webcomponents.js adds support for web components and custom elements to your application.
+
+## Getting Started
+
+First, install the component via bower on the command line.
+
+```
+bower install px-number-formatter --save
 ```
 
-And then use it:
+Second, import the component to your application with the following tag in your head.
 
-```html
-<numbro-element value="1000" format="0.0"></numbro-element>
+```
+<link rel="import" href="/bower_components/px-number-formatter/px-number-formatter.html"/>
 ```
 
-See the [Documentation](https://metanov.github.io/numbro-element/) for more options.
+Finally, use the component in your application:
 
-## Discussing
+```
+Insert Your demo code here.
+```
 
-If you have any questions, you can find me on the [Polymer Slack Channel](https://polymer.slack.com/), or just raise an Issue.
+<br />
+<hr />
 
-## Contributing
+## Documentation
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+Read the full API and view the demo [here](https://predixdev.github.io/px-number-formatter).
 
-## License
+The documentation in this repository is supplemental to the official Predix documentation, which is continuously updated and maintained by the Predix documentation team. Go to [http://predix.io](http://predix.io)  to see the official Predix documentation.
 
-[MIT License](http://opensource.org/licenses/MIT) © Pascal Gula
 
-[![Throughput Graph](https://graphs.waffle.io/MeTaNoV/numbro-element/throughput.svg)](https://waffle.io/MeTaNoV/numbro-element/metrics)
+## Local Development
 
+From the component's directory...
+
+```
+$ npm install
+$ bower install
+$ gulp sass
+```
+
+From the component's directory, to start a local server run:
+
+```
+$ gulp serve
+```
+
+Navigate to the root of that server (e.g. http://localhost:8080/) in a browser to open the API documentation page, with link to the "Demo" / working examples.
+
+### GE Coding Style Guide
+[GE JS Developer's Guide](https://github.com/GeneralElectric/javascript)
+
+<br />
+<hr />
+
+## Known Issues
+
+Please use [Github Issues](https://github.com/PredixDev/px-number-formatter/issues) to submit any bugs you might find.
