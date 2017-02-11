@@ -108,14 +108,10 @@
         '_format(value, format, currency)'
       ],
 
-      // Element Lifecycle
-
       ready: function() {
         // force a default value for format for the observer to trigger properly
         this.format = this.format || (this.currency ? '0$' : '0,0');
       },
-
-      // Element Behavior
 
       /**
        * @param {number} input value.
