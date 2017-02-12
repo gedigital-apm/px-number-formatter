@@ -1,3 +1,8 @@
+v2.0.1
+==================
+* Separated behavior into commonPoperties a dev migtht wish to set and the formatting methods and observers
+* create px-number-formatter-no-display for encapsulation of formatting properties
+
 v2.0.0
 ==================
 * Initial release of px-number-formatter
