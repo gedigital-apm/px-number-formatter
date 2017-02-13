@@ -31,7 +31,10 @@ Second, import the component to your application with the following tag in your 
 Finally, use the component in your application:
 
 ```
-Insert Your demo code here.
+<px-number-formatter
+    value="1000"
+    format="0,0">
+</px-number-formatter>
 ```
 
 <br />

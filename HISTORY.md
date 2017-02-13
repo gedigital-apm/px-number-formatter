@@ -1,3 +1,7 @@
+v2.0.4
+==================
+* fixed gitgnore, wct conf, name in package.json, updated ghp script
+
 v2.0.3
 ==================
 * Fix behavior typo

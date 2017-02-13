@@ -2,13 +2,13 @@
     "name": "px-number-formatter",
     "author": "General Electric",
     "description": "A Px component",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "private": true,
     "extName" : null,
     "repository" :
     {
         "type": "git",
-        "url": "https://github.com/PredixDev/change-this-in-package.json-please.git"
+        "url": "https://github.com/PredixDev/px-number-formatter.git"
     },
     "homepage": "http://predix.io/",
     "devDependencies": {
