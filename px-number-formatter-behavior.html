@@ -67,7 +67,8 @@
         },
 
         /**
-         * The formatted string representation of the value
+         * The formatted string representation of the value. Only set if 
+         * targetElement is not defined
          */
         formattedValue: {
           type: String,
@@ -113,6 +114,13 @@
         defaultCurrencyFormat: {
           type: String,
           observer: '_defaultCurrencyFormat'
+        },
+        /**
+        * Target element to assign the formatted value to. If defined
+        * formattedValue won't be assigned
+        */
+        targetElement: {
+          type: HTMLElement
         }
       },
 
@@ -145,7 +153,11 @@
 
         formatted = formatted === 'NaN' ? '' : formatted;
 
-        this.set('formattedValue', formatted);
+        if(this.targetElement) {
+          this.targetElement.textContent = formatted;
+        } else {
+          this.set('formattedValue', formatted);
+        }
       },
 
       /**

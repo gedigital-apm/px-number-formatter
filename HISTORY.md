@@ -1,3 +1,9 @@
+v3.0.0
+==================
+* px-number-formatter now assign the formatted value to the element 
+directly for performance reason. The formatted value is not reflected in formattedValue anymore
+* px-number-formatter-no-display still reflects the formatted value in formattedValue
+
 v2.0.4
 ==================
 * fixed gitgnore, wct conf, name in package.json, updated ghp script

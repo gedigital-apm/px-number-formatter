@@ -22,7 +22,7 @@ A wrapper for px-number-formatter-behavior to provide declarative number formatt
 <dom-module id="px-number-formatter">
   <template>
     <style include="px-number-formatter-styles"></style>
-    <span>{{formattedValue}}</span>
+    <span id="span"></span>
   </template>
 </dom-module>
 
@@ -35,7 +35,10 @@ A wrapper for px-number-formatter-behavior to provide declarative number formatt
       PxNumberFormatter.formatter
     ],
 
-    properties: {}
+    properties: {},
+    attached: function() {
+      this.targetElement = this.$.span;
+    }
 
   });
 </script>
