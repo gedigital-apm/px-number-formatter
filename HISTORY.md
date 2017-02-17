@@ -1,3 +1,7 @@
+v3.0.1
+==================
+* Ensure we format value on attached for px-number-formatter if we have a value already
+
 v3.0.0
 ==================
 * px-number-formatter now assign the formatted value to the element 

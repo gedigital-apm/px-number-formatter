@@ -38,6 +38,9 @@ A wrapper for px-number-formatter-behavior to provide declarative number formatt
     properties: {},
     attached: function() {
       this.targetElement = this.$.span;
+      if(this.value) {
+        this._format(this.value);
+      }
     }
 
   });
