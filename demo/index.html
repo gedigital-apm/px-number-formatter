@@ -23,7 +23,7 @@
     <!-- Header -->
     <px-demo-header
         module-name="px-number-formatter"
-        description="The px-number-formatter component is a wrapper numbrojs to creates a formatted string of a number and/or unformats a formatted string into a number.">
+        description="The px-number-formatter component is a wrapper of numbrojs  and creates a formatted string of a number and/or unformats a formatted string into a number.">
     </px-demo-header>
 
     <!-- Interactive -->
@@ -197,14 +197,14 @@
           return [
             { configName: "Default",
               configReset: true }
-          ]
+          ];
         }
       },
 
       scriptsIncludes: {
         type: Array,
         value: function() {
-          return ['https://cdn.rawgit.com/foretagsplatsen/numbro/1.9.0/numbro.js'];
+          return ['https://cdn.rawgit.com/foretagsplatsen/numbro/develop/dist/numbro.min.js', 'https://cdn.rawgit.com/foretagsplatsen/numbro/develop/dist/languages.min.js'];
         }
       },
     },
