@@ -1,10 +1,14 @@
+v3.0.2
+==================
+* added links to Numbro API in documentation
+
 v3.0.1
 ==================
 * Ensure we format value on attached for px-number-formatter if we have a value already
 
 v3.0.0
 ==================
-* px-number-formatter now assign the formatted value to the element 
+* px-number-formatter now assign the formatted value to the element
 directly for performance reason. The formatted value is not reflected in formattedValue anymore
 * px-number-formatter-no-display still reflects the formatted value in formattedValue
 
