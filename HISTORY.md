@@ -1,3 +1,7 @@
+v3.0.3
+==================
+* clarified license and attribution
+
 v3.0.2
 ==================
 * added links to Numbro API in documentation

@@ -2,7 +2,7 @@
 
 ## Overview
 
-px-number-formatter is a Predix UI component
+px-number-formatter is a Predix UI component forked from Pascal Gula's [numbro-element] (https://github.com/GeoloeG/numbro-element)
 
 ## Usage
 
@@ -74,3 +74,7 @@ Navigate to the root of that server (e.g. http://localhost:8080/) in a browser t
 ## Known Issues
 
 Please use [Github Issues](https://github.com/PredixDev/px-number-formatter/issues) to submit any bugs you might find.
+
+## Original License from Forked Code
+
+[MIT License](http://opensource.org/licenses/MIT) © Pascal Gula
