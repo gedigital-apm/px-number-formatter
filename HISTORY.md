@@ -1,3 +1,7 @@
+v3.0.4
+==================
+* fixed value check in number-formatter.html to look for 0
+
 v3.0.3
 ==================
 * clarified license and attribution
