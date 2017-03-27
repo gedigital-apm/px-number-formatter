@@ -1,3 +1,7 @@
+v3.0.5
+==================
+* change numbro bower to ~ because numbro's 1.10 is a breaking change
+
 v3.0.4
 ==================
 * fixed value check in number-formatter.html to look for 0
