@@ -1,3 +1,7 @@
+v4.0.0
+==================
+* Major bump to pick up redesigned sub-dependencies
+
 v3.0.5
 ==================
 * change numbro bower to ~ because numbro's 1.10 is a breaking change
