@@ -1,6 +1,8 @@
 v4.0.0
 ==================
 * Major bump to pick up redesigned sub-dependencies
+* add index-dark-theme
+* remove unnecessary sass
 
 v3.0.5
 ==================
