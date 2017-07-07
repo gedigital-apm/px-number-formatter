@@ -25,7 +25,7 @@
     ".editorconfig"
   ],
   "dependencies": {
-    "polymer": "^1.7.1",
+    "polymer": "^1.9.0",
     "numbro": "~1.9.0"
   },
   "devDependencies": {
