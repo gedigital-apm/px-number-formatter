@@ -1,3 +1,7 @@
+v4.0.1
+==================
+* runtime theming for demo
+
 v4.0.0
 ==================
 * Major bump to pick up redesigned sub-dependencies
