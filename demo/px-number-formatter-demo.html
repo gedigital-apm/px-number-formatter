@@ -17,7 +17,9 @@
 <!-- Demo DOM module -->
 <dom-module id="px-number-formatter-demo">
   <template>
-    <style include="px-demo-styles" is="custom-style"></style>
+    <custom-style>
+      <style include="px-demo-styles" is="custom-style"></style>
+    </custom-style>
 
     <!-- Header -->
     <px-demo-header
@@ -29,13 +31,13 @@
     <!-- Interactive -->
     <px-demo-interactive>
       <!-- Configs -->
-      <px-demo-configs configs="[[configs]]" props="{{props}}" chosen-config="{{chosenConfig}}"></px-demo-configs>
+      <px-demo-configs configs="[[configs]]" props="{{props}}" chosen-config="{{chosenConfig}}" slot="px-demo-configs"></px-demo-configs>
 
       <!-- Props -->
-      <px-demo-props props="{{props}}" config="[[chosenConfig]]"></px-demo-props>
+      <px-demo-props props="{{props}}" config="[[chosenConfig]]" slot="px-demo-props"></px-demo-props>
 
       <!-- Component ---------------------------------------------------------->
-      <px-demo-component>
+      <px-demo-component slot="px-demo-component">
         <p>Refer to the <a href="http://numbrojs.com/format.html" target="_blank">Numbro.js API</a> for information on the "format" strings you can use.</p>
         Original Number: [[props.value.value]]
         <br/ >
@@ -53,7 +55,8 @@
       <px-demo-component-snippet
           element-properties="{{props}}"
           element-name="px-number-formatter"
-          scripts-includes="[[scriptsIncludes]]">
+          scripts-includes="[[scriptsIncludes]]"
+          slot="px-demo-component-snippet">
       </px-demo-component-snippet>
     </px-demo-interactive>
 

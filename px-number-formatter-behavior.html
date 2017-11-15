@@ -156,6 +156,10 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
        * @param {number} input value.
        */
       _format: function(value) {
+        if(this.value === undefined || this.format === undefined || this.currency === undefined) {
+          return;
+        }
+
         var formatted;
         this._setNegative(value < 0);
         if(this.currency) {
@@ -190,8 +194,10 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
        * @param {string} new culture.
        */
       _culture: function(culture) {
-        numbro.culture(culture);
-        this._format(this.value);
+        if(!(this.culture === undefined)) {
+          numbro.culture(culture);
+          this._format(this.value);
+        }
       },
 
       /**
@@ -214,8 +220,10 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
        * @param {string} new default zero format.
        */
       _zeroFormat: function(format) {
-        numbro.zeroFormat(format);
-        this._format(this.value);
+        if(!(this.zeroFormat === undefined)) {
+          numbro.zeroFormat(format);
+          this._format(this.value);
+        }
       }
 
   }, PxNumberFormatter.commonProperties];
