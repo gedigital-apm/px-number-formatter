@@ -1,3 +1,7 @@
+v4.1.1
+==================
+* html to markdown in docs
+
 v4.1.0
 ==================
 * Hybridize

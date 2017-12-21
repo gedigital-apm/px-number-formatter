@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "elements": [
     {
-      "description": "A wrapper for px-number-formatter-behavior to provide declarative number formatting and display.\n\nRefer to the <a href=\"http://numbrojs.com/format.html\" target=\"_blank\">Numbro.js API</a> for information on the \"format\" strings you can use.\n\n### Usage\n\n    <px-number-formatter\n        value=\"1000\"\n        format=\"0,0\">\n    </px-number-formatter>",
+      "description": "A wrapper for px-number-formatter-behavior to provide declarative number formatting and display.\n\nRefer to the [Numbro.js API](http://numbrojs.com/format.html) for information on the \"format\" strings you can use.\n\n### Usage\n\n    <px-number-formatter\n        value=\"1000\"\n        format=\"0,0\">\n    </px-number-formatter>",
       "summary": "",
       "path": "px-number-formatter.html",
       "properties": [
@@ -116,7 +116,7 @@
         {
           "name": "formattedValue",
           "type": "string",
-          "description": "The formatted string representation of the value. Only set if\ntargetElement is not defined",
+          "description": "The formatted string representation of the value. Only set if\n`targetElement` is not defined",
           "privacy": "public",
           "sourceRange": {
             "file": "px-number-formatter-behavior.html",
@@ -254,7 +254,7 @@
         {
           "name": "targetElement",
           "type": "HTMLElement",
-          "description": "Target element to assign the formatted value to. If defined\nformattedValue won't be assigned",
+          "description": "Target element to assign the formatted value to. If defined\n`formattedValue` won't be assigned",
           "privacy": "public",
           "sourceRange": {
             "file": "px-number-formatter-behavior.html",
@@ -562,7 +562,7 @@
         },
         {
           "name": "formatted-value",
-          "description": "The formatted string representation of the value. Only set if\ntargetElement is not defined",
+          "description": "The formatted string representation of the value. Only set if\n`targetElement` is not defined",
           "sourceRange": {
             "file": "px-number-formatter-behavior.html",
             "start": {
@@ -670,7 +670,7 @@
         },
         {
           "name": "target-element",
-          "description": "Target element to assign the formatted value to. If defined\nformattedValue won't be assigned",
+          "description": "Target element to assign the formatted value to. If defined\n`formattedValue` won't be assigned",
           "sourceRange": {
             "file": "px-number-formatter-behavior.html",
             "start": {
@@ -996,7 +996,7 @@
             {
               "name": "formattedValue",
               "type": "string",
-              "description": "The formatted string representation of the value. Only set if\ntargetElement is not defined",
+              "description": "The formatted string representation of the value. Only set if\n`targetElement` is not defined",
               "privacy": "public",
               "sourceRange": {
                 "start": {
@@ -1122,7 +1122,7 @@
             {
               "name": "targetElement",
               "type": "HTMLElement",
-              "description": "Target element to assign the formatted value to. If defined\nformattedValue won't be assigned",
+              "description": "Target element to assign the formatted value to. If defined\n`formattedValue` won't be assigned",
               "privacy": "public",
               "sourceRange": {
                 "start": {
@@ -1386,7 +1386,7 @@
             },
             {
               "name": "formatted-value",
-              "description": "The formatted string representation of the value. Only set if\ntargetElement is not defined",
+              "description": "The formatted string representation of the value. Only set if\n`targetElement` is not defined",
               "sourceRange": {
                 "start": {
                   "line": 89,
@@ -1482,7 +1482,7 @@
             },
             {
               "name": "target-element",
-              "description": "Target element to assign the formatted value to. If defined\nformattedValue won't be assigned",
+              "description": "Target element to assign the formatted value to. If defined\n`formattedValue` won't be assigned",
               "sourceRange": {
                 "start": {
                   "line": 138,
