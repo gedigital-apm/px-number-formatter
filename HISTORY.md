@@ -1,3 +1,7 @@
+v4.1.2
+==================
+* fixing demo pages for IE11
+
 v4.1.1
 ==================
 * html to markdown in docs
