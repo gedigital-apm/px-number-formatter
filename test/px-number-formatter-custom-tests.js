@@ -153,3 +153,32 @@ suite('px-number-formatter unformat', function() {
     assert.equal(formatter.unformattedValue, 5000);
   });
 });
+
+suite('px-number-formatter no format', function() {
+  let fx,
+      formatter,
+      formatterNoDisplay;
+
+  setup(function(done) {
+    fx = fixture('noFormatFixture');
+    flush(function() {
+      formatter = Polymer.dom(fx.root).querySelector('px-number-formatter');
+      formatter.value = 12398.49;
+      formatter.format = 'NONE';
+
+      formatterNoDisplay = Polymer.dom(fx.root).querySelector('px-number-formatter-no-display');
+      formatterNoDisplay.value = 12398.49;
+      formatterNoDisplay.format = 'NONE';
+
+      done();
+    });
+  });
+
+  test('Check value is not formatted if format="NONE"', function() {
+    assert.equal(formatter.targetElement.textContent, '12398.49');
+  });
+
+  test('Check value is not formatted if format="NONE" nodisplay', function() {
+    assert.equal(formatterNoDisplay.formattedValue, '12398.49');
+  });
+});
