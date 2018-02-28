@@ -34,7 +34,11 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
     properties: {
 
       /**
-       * The format used to generate the output
+       * The format used to generate the output. Set to a [valid numbro.js
+       * format string](http://numbrojs.com/format.html).
+       *
+       * Set to "NONE" to skip formatting and use the `value` to set the
+       * `formattedValue` directly.
        */
       format: {
         type: String
@@ -160,18 +164,9 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
           return;
         }
 
-        var formatted;
         this._setNegative(value < 0);
-        if(this.currency) {
-          if(this.format) {
-            formatted = numbro(value).formatCurrency(this.format);
-          } else {
-            formatted = numbro(value).formatCurrency();
-          }
-        } else {
-          formatted = numbro(value).format(this.format);
-        }
 
+        var formatted = this._getFormattedValue(this.value, this.format, this.currency);
         formatted = formatted === 'NaN' ? '' : formatted;
 
         if(this.targetElement) {
@@ -179,6 +174,21 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
         } else {
           this.set('formattedValue', formatted);
         }
+      },
+
+      /**
+       * @param  {string} value
+       * @param  {?string} format
+       * @param  {boolean} currency
+       */
+      _getFormattedValue: function(value, format, currency) {
+        if (format === 'NONE') {
+          return value;
+        }
+        if (currency) {
+          return numbro(value).formatCurrency(format);
+        }
+        return numbro(value).format(format);
       },
 
       /**
