@@ -1,3 +1,8 @@
+v4.2.0
+==================
+* Added 'NONE' as an option to prevent number formatting.
+* Misc refactoring
+
 v4.1.2
 ==================
 * fixing demo pages for IE11
