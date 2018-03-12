@@ -1,3 +1,7 @@
+v4.2.1
+==================
+* Add window prefix to behavior
+
 v4.2.0
 ==================
 * Added 'NONE' as an option to prevent number formatting.
