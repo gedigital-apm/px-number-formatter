@@ -182,3 +182,28 @@ suite('px-number-formatter no format', function() {
     assert.equal(formatterNoDisplay.formattedValue, '12398.49');
   });
 });
+
+suite('new px-number-formatter does not overwrite culture', function() {
+  let fx,
+      formatter,
+      newFormater;
+
+  setup(function(done) {
+    fx = fixture('noFormatFixture');
+    newFormater = document.createElement('px-number-formatter');
+    document.body.appendChild(newFormater);
+    
+    flush(function() {
+      formatter = Polymer.dom(fx.root).querySelector('px-number-formatter'); 
+      done();
+    });
+  });
+
+  test('newFormatter exists and has culture set"', function() {
+    assert.equal(newFormater.culture(), 'fr-FR');
+  });
+
+  test('Old formatter still has culture', function() {
+    assert.equal(formatter.culture(), 'fr-FR');
+  });
+});
