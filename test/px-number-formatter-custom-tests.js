@@ -199,11 +199,7 @@ suite('new px-number-formatter does not overwrite culture', function() {
     });
   });
 
-  test('newFormatter exists and has culture set"', function() {
-    assert.equal(newFormater.culture(), 'fr-FR');
-  });
-
-  test('Old formatter still has culture', function() {
-    assert.equal(formatter.culture(), 'fr-FR');
+  test('numbro still has culture', function() {
+    assert.equal(numbro.culture(), 'fr-FR');
   });
 });
