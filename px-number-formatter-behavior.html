@@ -31,6 +31,7 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
 -->
 
 
+
 <link rel="import" href="numbro-import.html">
 
 <script>
@@ -79,6 +80,10 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
        * Provide a new default format for `0` value
        */
       zeroFormat: {
+        type: String
+      },
+
+      decimalFormat: {
         type: String
       }
     }
@@ -157,7 +162,13 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
         */
         targetElement: {
           type: HTMLElement
-        }
+        },
+        /**
+         * Setting custom format
+         * */
+        decimalFormat:{
+          type: String
+        },
       },
 
       observers: [
@@ -178,10 +189,15 @@ All modifications are Copyright 2017 by GE. Please see LICENSE.md.
         if(this.value === undefined || this.format === undefined || this.currency === undefined) {
           return;
         }
-
         this._setNegative(value < 0);
+        
+        var dataFormat = this.format;
+        if(this.decimalFormat) {
+          dataFormat = this.decimalFormat;
+        } 
+        
+        var formatted = this._getFormattedValue(this.value, dataFormat, this.currency);
 
-        var formatted = this._getFormattedValue(this.value, this.format, this.currency);
         formatted = formatted === 'NaN' ? '' : formatted;
 
         if(this.targetElement) {
